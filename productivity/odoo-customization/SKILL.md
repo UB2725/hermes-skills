@@ -99,7 +99,7 @@ Community notes for adding a custom module:
 
 ## One module or many?
 
-Prefer ONE custom module per business domain (e.g. `berathi_ui` depending on `crm`, `sale`,
+Prefer ONE custom module per business domain (e.g. `acme_ui` depending on `crm`, `sale`,
 `account`, `project`) rather than one module per Odoo app. Shared assets (SCSS, JS) and shared
 `depends` load once and the upgrade step stays a single `-u`. Split only when different people need
 to install/remove a customization independently.

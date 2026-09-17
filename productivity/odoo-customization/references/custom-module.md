@@ -32,9 +32,9 @@ addons_path = /path/to/odoo-src/addons, /path/to/odoo-custom
 
 ```python
 {
-    'name': 'Berathi UI',
+    'name': 'Acme UI',
     'version': '17.0.1.0.0',
-    'summary': 'Per-app UI overrides for PT Berathi',
+    'summary': 'Per-app UI overrides',
     'depends': ['crm', 'sale', 'account', 'project'],
     'data': [
         'views/crm_lead_views.xml',
@@ -42,7 +42,7 @@ addons_path = /path/to/odoo-src/addons, /path/to/odoo-custom
     ],
     'assets': {
         'web.assets_backend': [
-            'berathi_ui/static/src/scss/custom.scss',
+            'acme_ui/static/src/scss/custom.scss',
         ],
     },
     'installable': True,
